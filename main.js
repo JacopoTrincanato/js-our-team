@@ -58,7 +58,7 @@ for (let i = 0; i < teamMembers.length; i++) {
             <div class="p-3">
                 <h6 class="text-white text-uppercase">${name}</h6>
                 <div class="text-white">${role}</div>
-                <div class="text-white">${email}</div>
+                <div class="colored-mail">${email}</div>
             </div>
                         
                         
