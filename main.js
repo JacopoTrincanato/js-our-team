@@ -47,4 +47,20 @@ for (let i = 0; i < teamMembers.length; i++) {
     
     //desctructuring
     const {name, role, email, img} = member;
+
+    //creo il markup
+    const markup = `
+    <div class="col-4">
+        <div class="d-flex bg-dark">
+            <img class="w-25" src="${img}" alt="">
+            <div class="p-2">
+                <h4 class="text-white">${name}</h4>
+                <div class="text-white">${role}</div>
+                <div class="text-white">${email}</div>
+            </div>
+                        
+                        
+        </div>
+    </div>
+    `
 }
