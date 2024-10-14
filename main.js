@@ -45,4 +45,6 @@ for (let i = 0; i < teamMembers.length; i++) {
     const member = teamMembers[i];
     console.log(member);
     
+    //desctructuring
+    const {name, role, email, img} = member;
 }
