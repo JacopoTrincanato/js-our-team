@@ -69,3 +69,27 @@ for (let i = 0; i < teamMembers.length; i++) {
     //inserisco il markup nell'HTML
     rowEl.innerHTML += markup;
 }
+
+//form
+const formEl = document.getElementById('form');
+console.log(formEl);
+
+//creo una funzione che mi permetta di aggiungere card
+//aggiongi un eventListener al form, con un evento submit
+formEl.addEventListener('submit', function (e) {
+    e.preventDefault();
+
+    //richiama il valore dell'input image
+    let image = document.getElementById('image').value;
+
+    //richiama il valore dell'input name
+    let name = document.getElementById('FullName').value;
+   
+    //richiama il valore dell'input role
+    let role = document.getElementById('role').value;
+    
+   //richiama il valore dell'input email
+   let email = document.getElementById('email').value;
+   
+
+})
