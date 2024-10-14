@@ -40,6 +40,8 @@ const teamMembers = [
     }
   ];
 
+  let rowEl = document.querySelector('.row');
+  
 //ciclo l'array
 for (let i = 0; i < teamMembers.length; i++) {
     const member = teamMembers[i];
@@ -50,11 +52,11 @@ for (let i = 0; i < teamMembers.length; i++) {
 
     //creo il markup
     const markup = `
-    <div class="col-4">
+    <div class="col-4 my-4">
         <div class="d-flex bg-dark">
             <img class="w-25" src="${img}" alt="">
-            <div class="p-2">
-                <h4 class="text-white">${name}</h4>
+            <div class="p-3">
+                <h6 class="text-white text-uppercase">${name}</h6>
                 <div class="text-white">${role}</div>
                 <div class="text-white">${email}</div>
             </div>
@@ -63,4 +65,7 @@ for (let i = 0; i < teamMembers.length; i++) {
         </div>
     </div>
     `
+
+    //inserisco il markup nell'HTML
+    rowEl.innerHTML += markup;
 }

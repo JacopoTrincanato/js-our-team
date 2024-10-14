@@ -6,6 +6,12 @@ body{
 
 h1{
     color: #e53170;
-    font-weight: bold;
 }
 
+h1, h6{
+    font-weight: 900;
+}
+
+img{
+    max-width: 100%;
+}
