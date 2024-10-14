@@ -41,7 +41,7 @@ const teamMembers = [
   ];
 
   let rowEl = document.querySelector('.row');
-  
+
 //ciclo l'array
 for (let i = 0; i < teamMembers.length; i++) {
     const member = teamMembers[i];
@@ -91,5 +91,23 @@ formEl.addEventListener('submit', function (e) {
    //richiama il valore dell'input email
    let email = document.getElementById('email').value;
    
+    //creo una costante che conterrà la nuova carta
+    const newCard = {name, role, email, image};
+    console.log(newCard);
 
+    const markup = `
+    <div class="col-lg-4 col-md-6 col-sm-12 my-4">
+        <div class="d-flex bg-dark">
+            <img class="w-25" src="${image}" alt="">
+            <div class="p-3">
+                <h6 class="text-white text-uppercase">${name}</h6>
+                <div class="text-white">${role}</div>
+                <div class="colored-mail">${email}</div>
+            </div>
+                        
+                        
+        </div>
+    </div>
+    `
+    rowEl.innerHTML +=markup;
 })
