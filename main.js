@@ -52,7 +52,7 @@ for (let i = 0; i < teamMembers.length; i++) {
 
     //creo il markup
     const markup = `
-    <div class="col-4 my-4">
+    <div class="col-lg-4 col-md-6 col-sm-12 my-4">
         <div class="d-flex bg-dark">
             <img class="w-25" src="${img}" alt="">
             <div class="p-3">
