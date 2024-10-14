@@ -95,6 +95,7 @@ formEl.addEventListener('submit', function (e) {
     const newCard = {name, role, email, image};
     console.log(newCard);
 
+    //ricopio il markup
     const markup = `
     <div class="col-lg-4 col-md-6 col-sm-12 my-4">
         <div class="d-flex bg-dark">
@@ -109,5 +110,6 @@ formEl.addEventListener('submit', function (e) {
         </div>
     </div>
     `
+    //inserisco il markup nell'HTML
     rowEl.innerHTML +=markup;
 })
