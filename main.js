@@ -40,7 +40,8 @@ const teamMembers = [
     }
   ];
 
-  let rowEl = document.querySelector('.row');
+  //recupero l'elemento con id row
+  let rowEl = document.getElementById('row');
 
 //ciclo l'array
 for (let i = 0; i < teamMembers.length; i++) {
